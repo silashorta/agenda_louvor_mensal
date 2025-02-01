@@ -46,7 +46,7 @@ function Main() {
     const mdwk = filteredAgenda.filter(item => item.culto === "MDWK");
 
     return (
-        <main className='flex flex-col gap-6 min-h-full'>
+        <main className='flex flex-col gap-6 min-h-screen'>
             <div className='flex flex-col gap-4'>
                 <h1 className='text-3xl uppercase'>Escala Louvor</h1>
                 <Selects onMonthChange={handleMonthChange} onYearChange={handleYearChange} />
