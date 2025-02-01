@@ -41,7 +41,7 @@ function Selects({ onMonthChange, onYearChange }) {
                 value={currentYear}
                 className='p-2 rounded-lg'
             >
-                {Array.from({ length: 5 }, (_, i) => (
+                {Array.from({ length: 6 }, (_, i) => (
                     <option key={i} value={2020 + i}>{2020 + i}</option>
                 ))}
             </select>
