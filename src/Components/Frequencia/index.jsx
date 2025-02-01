@@ -61,7 +61,7 @@ function Frequencia() {
   
 
   return (
-    <div className='flex flex-col gap-4'>
+    <div className='flex flex-col gap-4 min-h-screen'>
       <div className='flex gap-4'>
         <select value={mes} onChange={(e) => setMes(e.target.value)} className='p-4 rounded-lg'>
           <option value="1">Janeiro</option>
