@@ -32,7 +32,7 @@ function UploadCSV() {
     try {
       console.log('Enviando dados:', parsedData); // Adicione este log para verificar os dados enviados
 
-      const response = await fetch('http://agenda-louvor-api.vercel.app/importar', {
+      const response = await fetch('https://agenda-louvor-api.vercel.app/importar', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
