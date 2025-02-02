@@ -11,7 +11,7 @@ function Main() {
         // Função para buscar dados da API
         const fetchData = async () => {
             try {
-                const response = await fetch('http://127.0.0.1:3000/integrantes'); // URL da sua API
+                const response = await fetch('http://agenda-louvor-api.vercel.app/integrantes'); // URL da sua API
                 const data = await response.json();
                 setAgenda(data);
             } catch (error) {

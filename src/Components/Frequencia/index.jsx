@@ -10,7 +10,7 @@ function Frequencia() {
   useEffect(() => {
     const fetchRegistros = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:3000/contaFrequencia?mes=${mes}&ano=${ano}`);
+        const response = await fetch(`http://agenda-louvor-api.vercel.app/contaFrequencia?mes=${mes}&ano=${ano}`);
         const data = await response.json();
         setRegistros(data);
       } catch (error) {
