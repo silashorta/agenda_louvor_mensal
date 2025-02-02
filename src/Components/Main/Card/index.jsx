@@ -11,7 +11,7 @@ import key from '../../../../public/images/keyboard.png';
 import aguitar from '../../../../public/images/violao.png';
 
 function Card({ data, bateria, baixo, guitarra, violao, teclado, vocal1, vocal2, ministro, kids1, kids2, kids3, kids4 }) {
-  const nomes = ['silas horta', 'ester horta', 'pr. caio braga', 'pra. dani braga', 'abner domingos', 'ana lúcia', 'caio duarte', 'caio mendes', 'gabriel monteiro', 'geovanna medeiros', 'giulia ventura', 'guilherme nery', 'igor araújo', 'pr. iohan', 'jean amaro', 'juliana oliveira', 'leo santos', 'lucas fundagem', 'lydia brum', 'rafael santana', 'raquel nogueira', 'caio tarso', 'danielle nogueira', 'todos'];
+  const nomes = ['silas horta', 'ester horta', 'pr. caio braga', 'pra. dani braga', 'abner domingos', 'ana lúcia', 'caio duarte', 'caio mendes', 'gabriel monteiro', 'geovanna medeiros', 'giulia ventura', 'guilherme nery', 'igor araújo', 'pr. iohan', 'jean amaro', 'juliana oliveira', 'leo santos', 'lucas fundagem', 'lydia brum', 'rafael santana', 'raquel nogueira', 'caio tarso', 'danielle nogueira', 'rhuan oliveira', 'todos'];
 
   const nomesBanco = { bateria, baixo, guitarra, violao, teclado, vocal1, vocal2, ministro, kids1, kids2, kids3, kids4 };
 
