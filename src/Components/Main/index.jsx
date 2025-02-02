@@ -55,7 +55,7 @@ function Main() {
             <div className='flex flex-col items-center gap-8'>
                 <div className='flex flex-col gap-4'>
                     <h2 className='font-bold text-xl'>DOMINGOS</h2>
-                    <div className='flex flex-wrap flex-1 gap-4'>
+                    <div className='flex flex-wrap justify-center flex-1 gap-4'>
                         {domingos.map((item, index) => (
                             <Card
                                 key={index}
@@ -75,7 +75,7 @@ function Main() {
 
                 <div className='flex flex-col gap-4'>
                     <h2 className='font-bold text-xl'>KIDS</h2>
-                    <div className='flex flex-wrap gap-4'>
+                    <div className='flex flex-wrap justify-center gap-4'>
                         {domingos.map((item, index) => (
                             <Card
                                 key={index}
@@ -91,7 +91,7 @@ function Main() {
 
                 <div className='flex flex-col gap-4'>
                     <h2 className='font-bold text-xl'>MDWK</h2>
-                    <div className='flex flex-wrap gap-4'>
+                    <div className='flex flex-wrap justify-center gap-4'>
                         {mdwk.map((item, index) => (
                             <Card
                                 key={index}

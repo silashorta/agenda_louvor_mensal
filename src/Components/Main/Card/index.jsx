@@ -50,7 +50,7 @@ function Card({ data, bateria, baixo, guitarra, violao, teclado, vocal1, vocal2,
         <div className='self-end hover:cursor-pointer'>
           <CiMenuKebab />
         </div>
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-4 justify-center'>
           <div className='font-bold'>{data}</div>
 
           <div>
