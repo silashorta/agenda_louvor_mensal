@@ -9,7 +9,7 @@ import Frequencia from './Components/Frequencia'
 function App() {
   return (
     <BrowserRouter>
-      <div className='flex flex-col gap-4 px-16 bg-amber-50'>
+      <div className='flex flex-col gap-4 md:px-16 px-4 bg-amber-50'>
         <Header />
         <Routes>
           <Route path='/' element={<Main />}/>
