@@ -38,7 +38,7 @@ function Frequencia() {
       const dataFim = new Date(ano, mes, 0);
 
       if (dataRegistro >= dataInicio && dataRegistro <= dataFim) {
-        const campos = ['bateria', 'baixo', 'guitarra', 'violao', 'teclado', 'vocal1', 'vocal2', 'ministro', 'kids1', 'kids2', 'kids3', 'kids4'];
+        const campos = ['bateria', 'baixo', 'guitarra', 'violao', 'teclado', 'vocal1', 'vocal2', 'vocal3', 'ministro', 'kids1', 'kids2', 'kids3', 'kids4'];
 
         campos.forEach((campo) => {
           const integrante = registro[campo];

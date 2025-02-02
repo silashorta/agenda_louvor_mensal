@@ -71,7 +71,8 @@ function Card({ data, bateria, baixo, guitarra, violao, teclado, vocal1, vocal2,
             </div>}
             {nomesCorrigidos.ministro && <div className='italic flex gap-4 truncate card'>
               <img src={mic} alt="Mic" className="w-5 h-5" /> <span className='truncate capitalize'>{nomesCorrigidos.ministro}</span></div>}
-            {nomesCorrigidos.vocal1 && <div className='italic flex gap-4 truncate card'><img src={mic} alt="Mic" className="w-5 h-5" /> <span className='truncate capitalize'>{nomesCorrigidos.vocal1}</span>
+            {nomesCorrigidos.vocal1 && <div className='italic flex gap-4 truncate card'>
+              <img src={mic} alt="Mic" className="w-5 h-5" /> <span className='truncate capitalize'>{nomesCorrigidos.vocal1}</span>
             </div>}
             {nomesCorrigidos.vocal2 && <div className='italic flex gap-4 truncate card'>
               <img src={mic} alt="Mic" className="w-5 h-5" /> <span className='truncate capitalize'>{nomesCorrigidos.vocal2}</span></div>}

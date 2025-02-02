@@ -104,6 +104,7 @@ function Main() {
                                 teclado={item.teclado}
                                 vocal1={item.vocal1}
                                 vocal2={item.vocal2}
+                                vocal3={item.vocal3}
                                 ministro={item.ministro}
                             />
                         ))}
