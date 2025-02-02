@@ -10,10 +10,10 @@ import guitar from '../../../../public/images/guitar.png';
 import key from '../../../../public/images/keyboard.png';
 import aguitar from '../../../../public/images/violao.png';
 
-function Card({ data, bateria, baixo, guitarra, violao, teclado, vocal1, vocal2, ministro, kids1, kids2, kids3, kids4 }) {
+function Card({ data, bateria, baixo, guitarra, violao, teclado, vocal1, vocal2, vocal3, ministro, kids1, kids2, kids3, kids4 }) {
   const nomes = ['silas horta', 'ester horta', 'pr. caio braga', 'pra. dani braga', 'abner domingos', 'ana lúcia', 'caio duarte', 'caio mendes', 'gabriel monteiro', 'geovanna medeiros', 'giulia ventura', 'guilherme nery', 'igor araújo', 'pr. iohan', 'jean amaro', 'juliana oliveira', 'leo santos', 'lucas fundagem', 'lydia brum', 'rafael santana', 'raquel nogueira', 'caio tarso', 'danielle nogueira', 'rhuan oliveira', 'todos'];
 
-  const nomesBanco = { bateria, baixo, guitarra, violao, teclado, vocal1, vocal2, ministro, kids1, kids2, kids3, kids4 };
+  const nomesBanco = { bateria, baixo, guitarra, violao, teclado, vocal1, vocal2, vocal3, ministro, kids1, kids2, kids3, kids4 };
 
   const getBestMatch = (nome) => {
     if (!nome) return null;
@@ -75,6 +75,8 @@ function Card({ data, bateria, baixo, guitarra, violao, teclado, vocal1, vocal2,
             </div>}
             {nomesCorrigidos.vocal2 && <div className='italic flex gap-4 truncate card'>
               <img src={mic} alt="Mic" className="w-5 h-5" /> <span className='truncate capitalize'>{nomesCorrigidos.vocal2}</span></div>}
+            {nomesCorrigidos.vocal3 && <div className='italic flex gap-4 truncate card'>
+              <img src={mic} alt="Mic" className="w-5 h-5" /> <span className='truncate capitalize'>{nomesCorrigidos.vocal3}</span></div>}
             {nomesCorrigidos.kids1 && <div className='italic flex gap-4 truncate card'><img src={mic} alt="Mic" className="w-5 h-5" /> <span className='truncate capitalize'>{nomesCorrigidos.kids1}</span>
             </div>}
             {nomesCorrigidos.kids2 && <div className='italic flex gap-4 truncate card'>

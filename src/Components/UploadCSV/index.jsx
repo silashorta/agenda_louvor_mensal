@@ -46,6 +46,7 @@ function UploadCSV() {
 
       const result = await response.json();
       console.log('Resultado:', result);
+      alert('Escala adicionada com sucesso!')
     } catch (error) {
       console.error('Erro ao enviar JSON:', error.message);
     }
