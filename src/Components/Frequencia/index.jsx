@@ -32,25 +32,28 @@ function Frequencia() {
     const frequenciaCalculada = {};
 
     registros.forEach((registro) => {
-      const [dia, mesRegistro, anoRegistro] = registro.data.split('/');
-      const dataRegistro = new Date(`${anoRegistro}-${mesRegistro}-${dia}`);
-      const dataInicio = new Date(ano, mes - 1, 1);
-      const dataFim = new Date(ano, mes, 0);
-
-      if (dataRegistro >= dataInicio && dataRegistro <= dataFim) {
-        const campos = ['bateria', 'baixo', 'guitarra', 'violao', 'teclado', 'vocal1', 'vocal2', 'vocal3', 'ministro', 'kids1', 'kids2', 'kids3', 'kids4'];
-
-        campos.forEach((campo) => {
-          const integrante = registro[campo];
-          if (integrante) {
-            const integranteCorrigido = getBestMatch(integrante.trim().toLowerCase());
-            if (!frequenciaCalculada[integranteCorrigido]) {
-              frequenciaCalculada[integranteCorrigido] = 0;
+      if (registro.data && typeof registro.data === 'string') {
+        const [dia, mesRegistro, anoRegistro] = registro.data.split('/');
+        const dataRegistro = new Date(`${anoRegistro}-${mesRegistro}-${dia}`);
+        
+        const dataInicio = new Date(ano, mes - 1, 1);
+        const dataFim = new Date(ano, mes, 0);
+      
+        if (dataRegistro >= dataInicio && dataRegistro <= dataFim) {
+          const campos = ['bateria', 'baixo', 'guitarra', 'violao', 'teclado', 'vocal1', 'vocal2', 'vocal3', 'ministro', 'kids1', 'kids2', 'kids3', 'kids4'];
+      
+          campos.forEach((campo) => {
+            const integrante = registro[campo];
+            if (integrante) {
+              const integranteCorrigido = getBestMatch(integrante.trim().toLowerCase());
+              if (!frequenciaCalculada[integranteCorrigido]) {
+                frequenciaCalculada[integranteCorrigido] = 0;
+              }
+              frequenciaCalculada[integranteCorrigido]++;
             }
-            frequenciaCalculada[integranteCorrigido]++;
-          }
-        });
-      }
+          });
+        }
+      }      
     });
 
     setFrequencia(frequenciaCalculada);
